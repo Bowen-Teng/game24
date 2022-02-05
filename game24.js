@@ -17,17 +17,19 @@ var config = {
     }
 }; 
 let cards_color = function (pointer) {
-    this.setTint(0x00ff00);
+    
     if(number1==-1) {
         number1 = this.index;
+        this.setTint(0x00ff00);
         console.log("number1 = " + number1 + " number2 = " + number2);
     }
     else if(number1 == this.index){
        this.clearTint();
        number1 = -1;
     } 
-    else {
+    else if (operation > 0){
         number2 = this.index;
+        this.setTint(0x00ff00);
         console.log("number1 = " + number1 + " number2 = " + number2);
         if (operation == 1){
             result = cards[number2] + cards[number1];
@@ -204,7 +206,7 @@ function create() {
         if (operation>0){
             operations[operation-1].clearTint();
         }
-        operation = 0;
+        operation = -1;
 
     });
     play.on('pointerup', clearTint);
