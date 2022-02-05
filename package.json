@@ -1,0 +1,21 @@
+{
+  "name": "game24",
+  "version": "1.0.0",
+  "description": "math game to get 24",
+  "main": "game24.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "game"
+  ],
+  "author": "bowus",
+  "license": "ISC",
+  "dependencies": {
+    "@capacitor/core": "^3.3.4",
+    "@capacitor/ios": "^3.3.4"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^3.3.4"
+  }
+}

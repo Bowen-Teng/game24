@@ -1,0 +1,6 @@
+{
+  "appId": "net.bowus.game24",
+  "appName": "bowus game24",
+  "webDir": "./",
+  "bundledWebRuntime": false
+}
